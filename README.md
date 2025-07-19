@@ -105,8 +105,8 @@ python manage.py runserver
 ## Аутентификация
 Страницы:
 Регистрация: /signup/
-Вход: /accounts/login/
-Выход: /accounts/logout/
+Вход: /auth/login/
+Выход: /auth/logout/
 
 ## Админка
 
