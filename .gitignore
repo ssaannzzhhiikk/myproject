@@ -1,0 +1,46 @@
+# Файлы операционной системы
+.DS_Store
+Thumbs.db
+
+# Виртуальное окружение
+/venv/
+/env/
+/.venv/
+
+# Кэш и скомпилированные файлы Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Файлы базы данных
+*.sqlite3
+db.sqlite3
+
+# Файлы окружения (содержат секретные ключи)
+.env
+*.env
+
+# Папки для медиа и статических файлов (которые собираются командой collectstatic)
+/media/
+/static/
+
+# Лог-файлы
+*.log
+logs/
+*.log.*
+
+# Файлы IDE и редакторов
+.idea/
+.vscode/
+*.swp
+
+# Зависимости Python (они должны быть в requirements.txt)
+pip-wheel-metadata/
+local_settings.py
+
+# Файлы Django
+.web-server-pid
+
+# Celery
+celerybeat-schedule.*
+celerybeat.pid
