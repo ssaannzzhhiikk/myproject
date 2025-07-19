@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <header class="bg-light py-5 text-center align-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Добро пожаловать в BaoTao</h1>
+            <p class="lead text-muted">Качественные товары из Китая по честным ценам</p>
+            <a href="{% url "catalogue" %}" class="btn btn-primary btn-lg mt-3">Перейти в каталог</a>
+        </div>
+    </header>
+{% endblock %}
