@@ -1,0 +1,40 @@
+{% extends 'auth_about.html' %}
+
+{% block title %}Dashboard - Django Auth{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Welcome to your Dashboard</h3>
+                </div>
+                <div class="card-body">
+                    <h5>Hello, {{ user.get_full_name|default:user.username }}!</h5>
+                    <p class="text-muted">You are successfully logged in.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h6>Account Information:</h6>
+                            <ul class="list-unstyled">
+                                <li><strong>Username:</strong> {{ user.username }}</li>
+                                <li><strong>Email:</strong> {{ user.email }}</li>
+                                <li><strong>First Name:</strong> {{ user.first_name }}</li>
+                                <li><strong>Last Name:</strong> {{ user.last_name }}</li>
+                                <li><strong>Date Joined:</strong> {{ user.date_joined|date:"F d, Y" }}</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Quick Actions:</h6>
+                            <div class="d-grid gap-2">
+                                <a href="{% url 'logout' %}" class="btn btn-outline-danger">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
