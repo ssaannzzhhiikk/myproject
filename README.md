@@ -1,6 +1,6 @@
 # BAOTAO on Django,  Shop + Ticketing and Ordering System
 
-##Описание
+## Описание
 
 Это тестовое задание — полноценное Django-приложение с:
 
